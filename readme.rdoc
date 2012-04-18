@@ -1,0 +1,12 @@
+=  Emerald Nightmare Launcher
+
+Simple implementation of repacker found in Marforius Client repo with aspects of a "official" launcher, this is the repository for hosting our released files and sourcecode.
+
+
+
+= Contact the Developers  
+
+irc.rizon.net #Marforius
+
+
+
