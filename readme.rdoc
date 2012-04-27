@@ -3,10 +3,26 @@
 Simple implementation of repacker found in Marforius Client repo with aspects of a "official" launcher, this is the repository for hosting our released files and sourcecode.
 
 
+This launcher is for those in Marforius' modding project named "Emerald Nightmare", do not use this launcher if you intend to play on a different server.
+
+
+No authorization is given for any project other then EMERALD NIGHTMARE to use this launcher. Use the Marforius-Client Generic Launcher if you intend to use this for anything other then its intended use.
+
+
+= Licence
+
+No authorization is given for use of this launcher or related tools in other projects' launchers or toolchains. Emerald Nightmare AND all related tools by Marforius in this repo are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
+
+= Screens
+
+http://suxorz.com/i5/launcher.png
+
+
 
 = Contact the Developers  
 
-irc.rizon.net #Marforius
+irc.rizon.net #Emerald_Nightmare
 
 
 
