@@ -78,6 +78,10 @@
     <None Include="doc\The MoPaQ File Format 1.0.txt">
       <Filter>Doc Files</Filter>
     </None>
+    <None Include="..\StormProxy\app.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="icon1.ico" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\StormCommon.h">
