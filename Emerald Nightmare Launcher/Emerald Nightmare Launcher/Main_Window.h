@@ -464,11 +464,12 @@ namespace EmeraldNightmareLauncher {
 				// 
 				// LauncherAlertBox
 				// 
-				this->LauncherAlertBox->ActiveLinkColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
-					static_cast<System::Int32>(static_cast<System::Byte>(0)));
+				this->LauncherAlertBox->ActiveLinkColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), 
+					static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 				this->LauncherAlertBox->BackColor = System::Drawing::Color::Transparent;
-				this->LauncherAlertBox->DisabledLinkColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
-					static_cast<System::Int32>(static_cast<System::Byte>(0)));
+				this->LauncherAlertBox->CausesValidation = false;
+				this->LauncherAlertBox->DisabledLinkColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), 
+					static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 				this->LauncherAlertBox->Font = (gcnew System::Drawing::Font(L"Tahoma", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
 					static_cast<System::Byte>(0)));
 				this->LauncherAlertBox->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)), 
@@ -536,6 +537,7 @@ namespace EmeraldNightmareLauncher {
 					 if(VersionOfRemoteIni > VersionAtCompile)
 						 {
 						 URLDownloadToFile ( NULL, _T("http://www.assembla.com/code/emerald-nightmare-launcher/subversion/node/blob/updates/AutoUpdater.exe"), _T("AutoUpdater.exe"), 0, NULL );
+						 LauncherAlertBox->Text = "";
 						 LauncherAlertBox->Text = "An updated version is available, one moment while the launcher is updated.";
 						 Sleep(5000);
 						 CreateProcessLauncher("AutoUpdater.exe -RunMain");
@@ -733,10 +735,12 @@ namespace EmeraldNightmareLauncher {
 					 DeleteDirectoryLauncher("Data\\realmlist.wtf", false);
 					 DeleteDirectoryLauncher("Data\\enUS\\realmlist.wtf", false);
 
+					 LauncherAlertBox->Text = "";
 					 LauncherAlertBox->Text = "Deleting Non-Essential files that won't be used in a private server environment(bloat)... \r\n\r\nYou should now relaunch World of Warcraft and close it to generate temporary files it needs. Realmlist.wtf is now integrated into WTF\\Config.wtf";
 					 }
 		private: System::Void deleteWarcraftsCacheToolStripMenuItem_Click_1(System::Object^  sender, System::EventArgs^  e) {
 					 DeleteDirectoryLauncher("Cache", false);
+					 LauncherAlertBox->Text = "";
 					 LauncherAlertBox->Text = "Deleted Cache...";
 					 }
 		private: System::Void shareGathererDataByLastEditedToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -765,6 +769,7 @@ namespace EmeraldNightmareLauncher {
 		private: System::Void deleteSettingsToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 					 DeleteDirectoryLauncher("WTF", false);
 					 DeleteDirectoryLauncher("Cache", false);
+					 LauncherAlertBox->Text = "";
 					 LauncherAlertBox->Text = "Deleted Cache and Settings...";
 					 }
 		private: System::Void clientSystemChecksToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -785,6 +790,7 @@ namespace EmeraldNightmareLauncher {
 		private: System::Void Main_Window_Load(System::Object^  sender, System::EventArgs^  e) {
 					 }
 		private: System::Void aboutToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+					 LauncherAlertBox->Text = "";
 					 LauncherAlertBox->Text = "Launcher programmed and designed by Marforius for the Emerald Nightmare/Marforius-Client projects. No authorization is given for use of this launcher or related tools in other projects' launchers or toolchains. Emerald Nightmare AND all related tools by Marforius are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.";
 					 }
 };
