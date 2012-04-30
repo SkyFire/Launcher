@@ -81,7 +81,6 @@
     <None Include="..\StormProxy\app.ico">
       <Filter>Resources</Filter>
     </None>
-    <None Include="icon1.ico" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\StormCommon.h">

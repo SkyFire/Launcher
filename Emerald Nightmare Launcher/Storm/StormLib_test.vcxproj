@@ -177,7 +177,6 @@
     <None Include="doc\History.txt" />
     <None Include="doc\The MoPaQ File Format 0.9.txt" />
     <None Include="doc\The MoPaQ File Format 1.0.txt" />
-    <None Include="icon1.ico" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
