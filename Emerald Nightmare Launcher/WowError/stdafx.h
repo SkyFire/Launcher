@@ -5,4 +5,9 @@
 
 #pragma once
 
+#include <fstream>
+#include <iostream>
+#include <stdio.h> 
+
+
 // TODO: reference additional headers your program requires here

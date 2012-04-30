@@ -2,10 +2,6 @@
 
 #include "stdafx.h"
 
-#include <fstream>
-#include <iostream>
-#include <stdio.h> 
-
 using namespace std;
 
 bool main(int argc, char *argv[])
