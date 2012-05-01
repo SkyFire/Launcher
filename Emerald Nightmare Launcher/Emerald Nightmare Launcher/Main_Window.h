@@ -540,8 +540,14 @@ namespace EmeraldNightmareLauncher {
 						 LauncherAlertBox->Text = "";
 						 LauncherAlertBox->Text = "An updated version is available, one moment while the launcher is updated.";
 						 Sleep(5000);
+						 VerofRemoteBeforeConvert.clear();
+						 VersionAtCompile = 0;
+						 VersionOfRemoteIni = 0;
 						 CreateProcessLauncher("AutoUpdater.exe -RunMain");
 						 }
+					 VerofRemoteBeforeConvert.clear();
+					 VersionAtCompile = 0;
+					 VersionOfRemoteIni = 0;
 					 }
 		private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 					 CreateProcessLauncher("wow.exe -console");
@@ -793,7 +799,7 @@ namespace EmeraldNightmareLauncher {
 					 LauncherAlertBox->Text = "";
 					 LauncherAlertBox->Text = "Launcher programmed and designed by Marforius for the Emerald Nightmare/Marforius-Client projects. No authorization is given for use of this launcher or related tools in other projects' launchers or toolchains. Emerald Nightmare AND all related tools by Marforius are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.";
 					 }
-};
+		};
 	}
 
 
